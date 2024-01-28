@@ -66,6 +66,39 @@
     &:active{
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba(#000, .2);
+    }
 
+    &-text{
+        &,
+        &:link,
+        &:visited{
+            font-size: 1rem;
+            color: $color-primary;
+            display: inline-block;
+            border-bottom: 1px solid;
+            padding: 5px;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s ease-in-out;
+        }
+
+        &:hover, &:focus{
+            transform: translateY(-3px);
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 10px 20px rgba($color-dark, .2);
+
+            span{
+                display: inline-block;
+            }
+        }
+        
+        &:active{
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba($color-dark, .2);
+
+        }
     }
 }
+
+
