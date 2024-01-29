@@ -4,3 +4,39 @@
     margin-top: -14rem;
 }
 
+
+.section-feature{
+    padding: 12.5rem 0;
+    background-image: linear-gradient(135deg , $color-primary-light-opc, $color-primary-dark-opc), 
+    url("../images/nat-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: skewY(-6deg);
+    margin-top: -7.25rem;
+
+    & > *{
+        transform: skewY(6deg);
+
+    }
+
+}
+
+.section-tours{
+    padding: 15.625rem 0 9.375rem;
+    background-color: $color-grey-light-1;
+    margin-top: -100px;
+}
+
+
+.section-stories{
+    padding: 150px 0;
+    position: relative;
+    
+}
+
+.section-book{
+    padding: 150px 0;
+    @include lg(to right bottom, $color-primary-light, $color-primary-dark)
+}
+
